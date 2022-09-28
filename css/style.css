@@ -43,7 +43,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #e90000d2;
+    color: red;
     padding: 2px 6px;
 }
 
@@ -53,7 +53,6 @@ a.externo::after {
 
 a:hover {
     text-decoration: underline;
-    color: red;
 }
 
 header {
@@ -111,10 +110,6 @@ main {
 article > h1 {
     font-family: idroid, Arial, Helvetica, sans-serif;
     color: #246240;
-}
-
-article a {
-    background-color: rgba(150, 60, 60, 0.315);
 }
 
 .subtitulos {
