@@ -37,15 +37,23 @@ h3 {
 p {
     text-indent: 30px;
     text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.5em;
 }
 
 a {
     text-decoration: none;
-    color: #e90000;
+    color: #e90000d2;
+    padding: 2px 6px;
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
 }
 
 a:hover {
-    background-color: rgba(0, 0, 0, 0.418);
+    text-decoration: underline;
+    color: red;
 }
 
 header {
@@ -66,31 +74,32 @@ header > h2 {
 
 header > p {
     font: normal 100 1.1em arial, helvetica, sans-serif;
-    margin: auto;
+    margin: 15px;
     color: rgba(255, 255, 255, 0.575);
     text-align: center;
 }
 
-header > menu {
+header > nav {
     text-align: left;
 }
 
 
-menu > a {
+nav > a {
     font: normal bold 16px arial, helvetica, sans-serif;
     text-decoration: none;
     color: white;
     padding: 5px;
-    
+    font-weight: bold;
+    transition-duration: .25s;
 }
 
-menu > a:hover {
+nav > a:hover {
     background-color: #21c069;
     border-radius: 5px;
 }
 
 main {
-    max-width: 800px;
+    max-width: 950px;
     min-width: 250px;
     margin: 0px auto auto auto;
     background-color: white;
@@ -102,6 +111,10 @@ main {
 article > h1 {
     font-family: idroid, Arial, Helvetica, sans-serif;
     color: #246240;
+}
+
+article a {
+    background-color: rgba(150, 60, 60, 0.315);
 }
 
 .subtitulos {
@@ -120,16 +133,20 @@ img {
     width: 100%;
 }
 
+#bugdroid {
+    max-width: 350px;
+}
+
 #video {
     text-align: center;
     background-color: #1A5C38;
     padding: 10px 40px;
 }
 
-#versoesandroid {
-    background-color: #C5EBD6;
-    padding: 10px;
+aside {
+    box-shadow: 3px 3px 8px black;
     border-radius: var(--bordasbot);
+    padding: 10px;
 }
 
 aside > h2 {
@@ -141,9 +158,14 @@ aside > h2 {
     border-radius: var(--bordastop);
 }
 
-ul {
-    display: inline-block;
-    margin-right: 150px;
+#versoesandroid {
+    background-color: #C5EBD6;
+    padding: 10px;
+    border-radius: var(--bordasbot);
+}
+
+#versoesandroid > ul {
+    columns: 2;
 }
 
 footer {
@@ -157,4 +179,14 @@ footer {
 footer > p {
     margin: 0px;
     text-align: center;
+}
+
+footer a {
+    font-weight: bold;
+    background-color: #1A5C38;
+}
+
+footer a:hover {
+    border-radius: 5px;
+    background-color: black;
 }
