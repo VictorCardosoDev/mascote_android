@@ -133,9 +133,20 @@ img {
 }
 
 #video {
-    text-align: center;
     background-color: #1A5C38;
-    padding: 10px 40px;
+    padding: 10px;
+    padding-bottom: 55%;
+    position: relative;
+    margin:0px auto ;
+    height: 0px;
+}
+
+#video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 aside {
